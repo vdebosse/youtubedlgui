@@ -20,6 +20,6 @@ To run:
   ```
   
 
-# Dependancies
+# Dependencies
 - youtube-dlc is available here: https://github.com/blackjack4494/yt-dlc
 - ffmpeg is available here: https://ffmpeg.org/
