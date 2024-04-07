@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: bridj-0.7.0.jar
+Main-Class: fr.vde.youtubedlgui.Gui
+SplashScreen-Image: splash.png
+
