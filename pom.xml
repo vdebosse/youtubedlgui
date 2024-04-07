@@ -43,7 +43,7 @@
 					<execution>
 						<id>copy-resources</id>
 						<!-- here the phase you need -->
-						<phase>assembly</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -92,51 +92,6 @@
 						</manifestEntries>
 					</archive>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.akathist.maven.plugins.launch4j</groupId>
-				<artifactId>launch4j-maven-plugin</artifactId>
-				<version>2.4.1</version>
-				<executions>
-					<execution>
-						<id>l4j-clui</id>
-						<phase>assembly</phase>
-						<goals>
-							<goal>launch4j</goal>
-						</goals>
-						<configuration>
-							<headerType>gui</headerType>
-							<icon>src/main/resources/YoutubeDLGui.ico</icon>
-							<outfile>target/package/YoutubeDLGui.exe</outfile>
-							<jar>target/${project.name}-${project.version}.jar</jar>
-							<errTitle>YoutubeDLGui</errTitle>
-							<classPath>
-								<mainClass>fr.vde.youtubedlgui.Gui</mainClass>
-								<addDependencies>true</addDependencies>
-								<preCp>anything</preCp>
-							</classPath>
-							<jre>
-								<path>C:/Program Files/Eclipse
-									Adoptium/jdk-17.0.7.7-hotspot</path>
-								<minVersion>17</minVersion>
-								<opts>
-									<opt>-Djava.endorsed.dirs=./endorsed</opt>
-								</opts>
-							</jre>
-							<versionInfo>
-								<fileVersion>2.0.0.0</fileVersion>
-								<txtFileVersion>2.0</txtFileVersion>
-								<fileDescription>Youtube Downloader</fileDescription>
-								<copyright>(c) Vincent DEBOSSE</copyright>
-								<productVersion>1.1.0.0</productVersion>
-								<txtProductVersion>txt product version</txtProductVersion>
-								<productName>Youtube D/L GUI</productName>
-								<internalName>youtubedlgui</internalName>
-								<originalFilename>YoutubeDLGui.exe</originalFilename>
-							</versionInfo>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>

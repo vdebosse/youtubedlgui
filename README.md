@@ -10,18 +10,15 @@ To build:
 ```
 mvn clean install
 ```
-
 ## Usage
 To run:
 - Put the generated jar (in target/) in a folder of your choice
 - Copy the dependencies found in target/package into the same folder
-- Copy the libs found in lib/ into the folder
-- Run the Java application:
+- Run the Java application from there:
   ```
   java -jar YoutubeDLGui-2.0.jar
   ```
   
-
 ## Dependencies
 - youtube-dlc is available here: https://github.com/blackjack4494/yt-dlc
 - ffmpeg is available here: https://ffmpeg.org/
