@@ -1,5 +1,6 @@
 # Youtube DL Gui
-This application is a simple GUI that wraps youtube-dlc and ffmpeg in order to download youtube videos as mp4 or mp3.
+This application is a simple GUI that wraps youtube-dlc and ffmpeg in order to download and convert youtube videos as mp4 or mp3.
+
 It comes with a queue system and can also fetch whole playlists.
 
 # Build
