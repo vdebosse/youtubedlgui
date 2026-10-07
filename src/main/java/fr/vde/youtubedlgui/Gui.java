@@ -397,7 +397,7 @@ public class Gui extends JFrame implements WindowListener, Releaser {
             }
         });
         List<String> args = new ArrayList<>();
-        File file = new File("youtube-dlc.exe");
+        File file = new File("yt-dlp.exe");
         String absolutePath = file.getAbsolutePath();
         args.add(absolutePath);
         args.add("-i");
@@ -414,7 +414,7 @@ public class Gui extends JFrame implements WindowListener, Releaser {
 
         args.add("\"" + url.getUrl() + "\"");
         ProcessBuilder builder = new ProcessBuilder(args);
-        logger.info("Path to youtube-dlc: " + absolutePath);
+        logger.info("Path to yt-dlp: " + absolutePath);
         logger.info("Can read? " + file.canRead());
         logger.info("Can execute? " + file.canExecute());
         File output = new File(url.getStorage());
